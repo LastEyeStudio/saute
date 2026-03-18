@@ -1,5 +1,6 @@
 {
   "stop_the_app": false,
+  "whatsapp_url": "https://wa.me/918220296911?text=hello%20mohit%20from%20saute!%20i%27m%20planning%20a%20trip%20to%20thailand%20%F0%9F%87%B9%F0%9F%87%AD",
   "categories": [
     { "key": "food", "label": "Food", "emoji": "🍜", "bg_color": "#33E85D3A", "text_color": "#FFFF8A6A", "border_color": "#4DE85D3A" },
     { "key": "attraction", "label": "Attractions", "emoji": "🏛️", "bg_color": "#335A9BE8", "text_color": "#FF8AC0FF", "border_color": "#4D5A9BE8" },
