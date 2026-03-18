@@ -1,3 +1,10 @@
 {
-  "stop_the_app": false
+  "stop_the_app": false,
+  "categories": [
+    { "key": "food", "label": "Food", "emoji": "🍜", "bg_color": "#33E85D3A", "text_color": "#FFFF8A6A", "border_color": "#4DE85D3A" },
+    { "key": "attraction", "label": "Attractions", "emoji": "🏛️", "bg_color": "#335A9BE8", "text_color": "#FF8AC0FF", "border_color": "#4D5A9BE8" },
+    { "key": "hidden_gem", "label": "Hidden Gem", "emoji": "💎", "bg_color": "#339B7AE8", "text_color": "#FFBEA8FF", "border_color": "#4D9B7AE8" },
+    { "key": "nightlife", "label": "Nightlife", "emoji": "🌙", "bg_color": "#33E87AAF", "text_color": "#FFFFA0CC", "border_color": "#4DE87AAF" },
+    { "key": "shopping", "label": "Shopping", "emoji": "🛍️", "bg_color": "#335ABF6B", "text_color": "#FF7FDF8F", "border_color": "#4D5ABF6B" }
+  ]
 }
