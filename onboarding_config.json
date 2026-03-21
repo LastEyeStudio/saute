@@ -235,13 +235,6 @@
       }
     },
     {
-      "id": "signup",
-      "type": "signup",
-      "title": "Almost there!",
-      "subtitle": "Sign up to save your personalized picks",
-      "signup_methods": ["whatsapp_otp", "google"]
-    },
-    {
       "id": "trip_timeline",
       "type": "single_select",
       "title": "When\u0027s the trip?",
@@ -254,6 +247,13 @@
         { "id": "3_6_months", "label": "3-6 months", "emoji": "\ud83e\uddd0", "description": "Just starting to think", "reaction_emoji": "\ud83e\uddd0", "reaction_text": "Great time to start!" },
         { "id": "just_dreaming", "label": "Just dreaming", "emoji": "\ud83d\udcad", "description": "No dates yet, inspire me", "reaction_emoji": "\ud83d\udcad", "reaction_text": "Dream big, plan later!" }
       ]
+    },
+    {
+      "id": "signup",
+      "type": "signup",
+      "title": "Almost there!",
+      "subtitle": "Sign up to save your personalized picks",
+      "signup_methods": ["whatsapp_otp", "google"]
     }
   ]
 }
