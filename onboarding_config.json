@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "screens": [
+    {
+      "id": "welcome",
+      "type": "welcome",
+      "title": "Your personal travel discovery companion",
+      "subtitle": "Discover Thailand like a local \u2014 personalized picks, hidden gems, and insider tips curated just for you.",
+      "image_url": ""
+    },
+    {
+      "id": "destination",
+      "type": "single_select",
+      "title": "Where in Thailand?",
+      "subtitle": "Pick the city you\u0027re most excited about",
+      "emoji": "\ud83c\uddf9\ud83c\udded",
+      "options": [
+        { "id": "bangkok", "label": "Bangkok", "emoji": "\ud83c\udfd9\ufe0f", "description": "The city that never sleeps" },
+        { "id": "chiang_mai", "label": "Chiang Mai", "emoji": "\u26f0\ufe0f", "description": "Temples, mountains \u0026 night markets" },
+        { "id": "phuket", "label": "Phuket", "emoji": "\ud83c\udfd6\ufe0f", "description": "Beaches, islands \u0026 nightlife" },
+        { "id": "pattaya", "label": "Pattaya", "emoji": "\ud83c\udf05", "description": "Beach city with endless energy" },
+        { "id": "krabi", "label": "Krabi", "emoji": "\ud83e\udef6", "description": "Cliffs, kayaks \u0026 island hopping" },
+        { "id": "koh_samui", "label": "Koh Samui", "emoji": "\ud83c\udf34", "description": "Tropical island paradise" }
+      ]
+    },
+    {
+      "id": "travel_group",
+      "type": "single_select",
+      "title": "Who\u0027s coming along?",
+      "subtitle": "This helps us tailor your experience",
+      "emoji": "\ud83e\uddd1\u200d\ud83e\udd1d\u200d\ud83e\uddd1",
+      "options": [
+        { "id": "solo", "label": "Solo", "emoji": "\ud83e\uddf3" },
+        { "id": "couple", "label": "Couple", "emoji": "\ud83d\udc91" },
+        { "id": "friends", "label": "Friends", "emoji": "\ud83d\udc6f" },
+        { "id": "family", "label": "Family", "emoji": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66" }
+      ],
+      "follow_up_questions": [
+        {
+          "trigger_option_id": "friends",
+          "question": {
+            "id": "group_size",
+            "type": "single_select",
+            "title": "How many of you?",
+            "options": [
+              { "id": "2_3", "label": "2-3", "emoji": "\u270c\ufe0f" },
+              { "id": "4_6", "label": "4-6", "emoji": "\ud83d\udd90\ufe0f" },
+              { "id": "7_plus", "label": "7+", "emoji": "\ud83e\udd1f" }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "family",
+          "question": {
+            "id": "family_ages",
+            "type": "multi_select",
+            "title": "Anyone special to plan for?",
+            "subtitle": "Select all that apply",
+            "options": [
+              { "id": "under_12", "label": "Kids under 12", "emoji": "\ud83d\udc76" },
+              { "id": "above_60", "label": "Above 60", "emoji": "\ud83d\udc74" },
+              { "id": "none", "label": "Nope, all good!", "emoji": "\ud83d\ude0e" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "travel_style",
+      "type": "single_select",
+      "title": "What\u0027s your travel style?",
+      "subtitle": "Pick the one that vibes with you",
+      "emoji": "\u2728",
+      "condition_source": "travel_group",
+      "conditional_options": {
+        "solo": [
+          { "id": "lone_wanderer", "label": "Lone Wanderer", "emoji": "\ud83e\udded", "description": "Map in hand, world at your feet" },
+          { "id": "solo_foodie", "label": "Solo Foodie", "emoji": "\ud83c\udf5c", "description": "Eat first, sightsee later" },
+          { "id": "deep_diver", "label": "Deep Diver", "emoji": "\ud83e\udd3f", "description": "Culture, history, meaning" },
+          { "id": "adrenaline_addict", "label": "Adrenaline Addict", "emoji": "\u26a1", "description": "Bungee, scuba, zip-line" }
+        ],
+        "couple": [
+          { "id": "romantic_escapists", "label": "Romantic Escapists", "emoji": "\ud83c\udf39", "description": "Sunsets \u0026 candlelit dinners" },
+          { "id": "adventure_duo", "label": "Adventure Duo", "emoji": "\ud83e\uddd7", "description": "Thrill-seekers together" },
+          { "id": "foodie_couple", "label": "Foodie Couple", "emoji": "\ud83c\udf77", "description": "We plan trips around food" },
+          { "id": "recharge_pair", "label": "Recharge Pair", "emoji": "\ud83d\udecc", "description": "Spa, pool, repeat" }
+        ],
+        "friends": [
+          { "id": "party_squad", "label": "Party Squad", "emoji": "\ud83c\udf89", "description": "Here for a good time" },
+          { "id": "explorer_pack", "label": "Explorer Pack", "emoji": "\ud83e\udded", "description": "See everything together" },
+          { "id": "foodie_gang", "label": "Foodie Gang", "emoji": "\ud83c\udf74", "description": "Street food crawl crew" },
+          { "id": "bucket_list_crew", "label": "Bucket List Crew", "emoji": "\u2705", "description": "Ticking off the list" }
+        ],
+        "family": [
+          { "id": "culture_fam", "label": "Culture Fam", "emoji": "\ud83c\udfdb\ufe0f", "description": "Temples, museums, stories" },
+          { "id": "easy_going_bunch", "label": "Easy-Going Bunch", "emoji": "\ud83c\udf34", "description": "No rush, go with the flow" },
+          { "id": "active_family", "label": "Active Family", "emoji": "\ud83d\udeb4", "description": "Hikes, bikes \u0026 water parks" },
+          { "id": "best_of_both_fam", "label": "Best of Both", "emoji": "\u2696\ufe0f", "description": "Adults \u0026 kids both happy" }
+        ]
+      }
+    },
+    {
+      "id": "budget",
+      "type": "slider",
+      "title": "Splurge or Save?",
+      "subtitle": "Drag to set your vibe \u2014 no judgment!",
+      "emoji": "\ud83d\udcb0",
+      "slider_min_label": "Backpacker\n\ud83c\udf92",
+      "slider_max_label": "Bougie\n\ud83d\udc8e"
+    },
+    {
+      "id": "trip_vibe",
+      "type": "single_select",
+      "title": "What\u0027s the vibe?",
+      "subtitle": "What do you want to feel on this trip?",
+      "emoji": "\ud83c\udfb6",
+      "condition_source": "travel_group",
+      "conditional_options": {
+        "solo": [
+          { "id": "disconnect", "label": "Disconnect", "emoji": "\ud83d\udd15", "description": "Switch off, find yourself" },
+          { "id": "push_boundaries", "label": "Push Boundaries", "emoji": "\ud83d\ude80", "description": "Do something you\u0027ve never done" },
+          { "id": "wander", "label": "Wander", "emoji": "\ud83d\udeb6", "description": "No plan, just vibes" },
+          { "id": "tick_the_list", "label": "Tick the List", "emoji": "\ud83d\udccb", "description": "See the must-sees" }
+        ],
+        "couple": [
+          { "id": "reconnect", "label": "Reconnect", "emoji": "\ud83d\udc95", "description": "Quality time together" },
+          { "id": "make_memories", "label": "Make Memories", "emoji": "\ud83d\udcf8", "description": "Once-in-a-lifetime moments" },
+          { "id": "celebrate", "label": "Celebrate", "emoji": "\ud83c\udf7e", "description": "Anniversary, birthday, just because" },
+          { "id": "try_everything", "label": "Try Everything", "emoji": "\ud83c\udf0d", "description": "A little bit of it all" }
+        ],
+        "friends": [
+          { "id": "chill_catch_up", "label": "Chill \u0026 Catch Up", "emoji": "\u2615", "description": "Relaxed vibes, deep talks" },
+          { "id": "go_hard", "label": "Go Hard", "emoji": "\ud83d\udd25", "description": "Sleep is for home" },
+          { "id": "explore_together", "label": "Explore Together", "emoji": "\ud83e\udded", "description": "See new things as a crew" },
+          { "id": "bit_of_everything", "label": "Bit of Everything", "emoji": "\ud83c\udf00", "description": "Mix it up each day" }
+        ],
+        "family": [
+          { "id": "quality_time", "label": "Quality Time", "emoji": "\ud83e\udde1", "description": "Be present with each other" },
+          { "id": "show_new_things", "label": "Show Them New Things", "emoji": "\ud83c\udf1f", "description": "Eye-opening experiences" },
+          { "id": "relax", "label": "Relax", "emoji": "\ud83c\udfd6\ufe0f", "description": "Pool, beach, no stress" },
+          { "id": "balance_for_all", "label": "Balance for Everyone", "emoji": "\u2696\ufe0f", "description": "Something for every age" }
+        ]
+      }
+    },
+    {
+      "id": "travel_ick",
+      "type": "single_select",
+      "title": "Biggest travel ick?",
+      "subtitle": "What stresses you out the most?",
+      "emoji": "\ud83d\ude29",
+      "options": [
+        { "id": "tourist_traps", "label": "Tourist Traps", "emoji": "\ud83c\udfa0", "description": "Overpriced \u0026 overhyped" },
+        { "id": "veg_food_anxiety", "label": "Veg Food Anxiety", "emoji": "\ud83e\udd66", "description": "Will I find good food?" },
+        { "id": "transport_scams", "label": "Transport Scams", "emoji": "\ud83d\ude95", "description": "Getting ripped off on rides" },
+        { "id": "no_plan_paralysis", "label": "No Plan Paralysis", "emoji": "\ud83e\udd2f", "description": "Too many choices, zero plan" }
+      ]
+    },
+    {
+      "id": "poison",
+      "type": "single_select",
+      "title": "What\u0027s your poison?",
+      "subtitle": "Pick the scene that calls to you",
+      "emoji": "\ud83c\udf1f",
+      "condition_source": "travel_group",
+      "conditional_options": {
+        "solo": [
+          { "id": "chai_hillside", "label": "Chai on a misty hillside", "emoji": "\u2615" },
+          { "id": "rooftop_cocktails", "label": "Rooftop cocktails at sunset", "emoji": "\ud83c\udf78" },
+          { "id": "chinatown_midnight", "label": "Chinatown at midnight", "emoji": "\ud83c\udf19" },
+          { "id": "beach_yoga", "label": "Beach yoga at sunrise", "emoji": "\ud83e\uddd8" }
+        ],
+        "couple": [
+          { "id": "private_beach_dinner", "label": "Private beach dinner", "emoji": "\ud83c\udf74" },
+          { "id": "rooftop_cocktails", "label": "Rooftop cocktails at sunset", "emoji": "\ud83c\udf78" },
+          { "id": "chinatown_midnight", "label": "Chinatown at midnight", "emoji": "\ud83c\udf19" },
+          { "id": "family_sunset_beach", "label": "Sunset on the beach", "emoji": "\ud83c\udf05" }
+        ],
+        "friends": [
+          { "id": "bangla_road", "label": "Bangla Road at 1 AM", "emoji": "\ud83c\udf89" },
+          { "id": "rooftop_cocktails", "label": "Rooftop cocktails at sunset", "emoji": "\ud83c\udf78" },
+          { "id": "chinatown_midnight", "label": "Chinatown at midnight", "emoji": "\ud83c\udf19" },
+          { "id": "beach_yoga", "label": "Beach yoga at sunrise", "emoji": "\ud83e\uddd8" }
+        ],
+        "family": [
+          { "id": "family_sunset_beach", "label": "Family sunset on the beach", "emoji": "\ud83c\udf05" },
+          { "id": "rooftop_cocktails", "label": "Rooftop cocktails at sunset", "emoji": "\ud83c\udf78" },
+          { "id": "chinatown_midnight", "label": "Chinatown at midnight", "emoji": "\ud83c\udf19" },
+          { "id": "chai_hillside", "label": "Chai on a misty hillside", "emoji": "\u2615" }
+        ]
+      }
+    },
+    {
+      "id": "personality_reveal",
+      "type": "reveal",
+      "title": "You\u0027re all set!",
+      "subtitle": "Here\u0027s your travel personality",
+      "conditional_reveal_cards": {
+        "solo": [
+          { "id": "personality", "title": "The Free Spirit", "emoji": "\ud83e\udded", "subtitle": "You follow your own path" },
+          { "id": "superpower", "title": "Superpower: Adaptability", "emoji": "\u26a1", "subtitle": "You thrive in the unexpected" },
+          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Hidden alleys \u0026 local haunts" },
+          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Chat with locals \u2014 they know best" }
+        ],
+        "couple": [
+          { "id": "personality", "title": "The Dream Team", "emoji": "\ud83d\udc95", "subtitle": "Together you\u0027re unstoppable" },
+          { "id": "superpower", "title": "Superpower: Chemistry", "emoji": "\u2728", "subtitle": "You find magic in every moment" },
+          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Sunset spots \u0026 cozy corners" },
+          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Book that surprise experience" }
+        ],
+        "friends": [
+          { "id": "personality", "title": "The Squad Goals", "emoji": "\ud83d\ude0e", "subtitle": "Legends in the making" },
+          { "id": "superpower", "title": "Superpower: Energy", "emoji": "\ud83d\udd25", "subtitle": "You turn any place into a party" },
+          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Night markets \u0026 rooftop bars" },
+          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Split up sometimes \u2014 compare stories later" }
+        ],
+        "family": [
+          { "id": "personality", "title": "The Adventure Family", "emoji": "\ud83c\udfe0", "subtitle": "Making memories that last" },
+          { "id": "superpower", "title": "Superpower: Togetherness", "emoji": "\ud83e\udde1", "subtitle": "Every trip brings you closer" },
+          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Kid-friendly gems \u0026 scenic spots" },
+          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Build in downtime \u2014 everyone needs it" }
+        ]
+      }
+    },
+    {
+      "id": "signup",
+      "type": "signup",
+      "title": "Almost there!",
+      "subtitle": "Sign up to save your personalized picks",
+      "signup_methods": ["whatsapp_otp", "google"]
+    },
+    {
+      "id": "trip_timeline",
+      "type": "single_select",
+      "title": "When\u0027s the trip?",
+      "subtitle": "No pressure \u2014 even \"just dreaming\" counts",
+      "emoji": "\ud83d\udcc5",
+      "options": [
+        { "id": "this_month", "label": "This month", "emoji": "\ud83d\ude80", "description": "Let\u0027s go!" },
+        { "id": "1_2_months", "label": "1-2 months", "emoji": "\ud83d\udcc6", "description": "Planning mode" },
+        { "id": "3_6_months", "label": "3-6 months", "emoji": "\ud83e\uddd0", "description": "Just starting to think" },
+        { "id": "just_dreaming", "label": "Just dreaming", "emoji": "\ud83d\udcad", "description": "No dates yet, inspire me" }
+      ]
+    }
+  ]
+}
