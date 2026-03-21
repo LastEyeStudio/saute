@@ -15,12 +15,12 @@
       "emoji": "\ud83c\uddf9\ud83c\udded",
       "auto_advance": true,
       "options": [
-        { "id": "bangkok", "label": "Bangkok", "emoji": "\ud83c\udfd9\ufe0f", "description": "The city that never sleeps", "reaction_emoji": "\ud83c\udfd9\ufe0f", "reaction_text": "Bangkok it is! Let\u0027s go!" },
-        { "id": "chiang_mai", "label": "Chiang Mai", "emoji": "\u26f0\ufe0f", "description": "Temples, mountains \u0026 night markets", "reaction_emoji": "\u26f0\ufe0f", "reaction_text": "Mountains are calling!" },
-        { "id": "phuket", "label": "Phuket", "emoji": "\ud83c\udfd6\ufe0f", "description": "Beaches, islands \u0026 nightlife", "reaction_emoji": "\ud83c\udfd6\ufe0f", "reaction_text": "Beach vibes incoming!" },
-        { "id": "pattaya", "label": "Pattaya", "emoji": "\ud83c\udf05", "description": "Beach city with endless energy", "reaction_emoji": "\ud83c\udf05", "reaction_text": "Non-stop energy!" },
-        { "id": "krabi", "label": "Krabi", "emoji": "\ud83e\udef6", "description": "Cliffs, kayaks \u0026 island hopping", "reaction_emoji": "\ud83e\udef6", "reaction_text": "Adventure awaits!" },
-        { "id": "koh_samui", "label": "Koh Samui", "emoji": "\ud83c\udf34", "description": "Tropical island paradise", "reaction_emoji": "\ud83c\udf34", "reaction_text": "Paradise found!" }
+        { "id": "bangkok", "label": "Bangkok", "emoji": "\ud83c\udfd9\ufe0f", "image_url": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=400&h=250&fit=crop", "description": "The city that never sleeps", "reaction_emoji": "\ud83c\udfd9\ufe0f", "reaction_text": "Bangkok it is! Let\u0027s go!" },
+        { "id": "chiang_mai", "label": "Chiang Mai", "emoji": "\u26f0\ufe0f", "image_url": "https://images.unsplash.com/photo-1598935898639-81586f7d2129?w=400&h=250&fit=crop", "description": "Temples, mountains \u0026 night markets", "reaction_emoji": "\u26f0\ufe0f", "reaction_text": "Mountains are calling!" },
+        { "id": "phuket", "label": "Phuket", "emoji": "\ud83c\udfd6\ufe0f", "image_url": "https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=400&h=250&fit=crop", "description": "Beaches, islands \u0026 nightlife", "reaction_emoji": "\ud83c\udfd6\ufe0f", "reaction_text": "Beach vibes incoming!" },
+        { "id": "pattaya", "label": "Pattaya", "emoji": "\ud83c\udf05", "image_url": "https://images.unsplash.com/photo-1504457047772-27faf1c00561?w=400&h=250&fit=crop", "description": "Beach city with endless energy", "reaction_emoji": "\ud83c\udf05", "reaction_text": "Non-stop energy!" },
+        { "id": "krabi", "label": "Krabi", "emoji": "\ud83e\udef6", "image_url": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=400&h=250&fit=crop", "description": "Cliffs, kayaks \u0026 island hopping", "reaction_emoji": "\ud83e\udef6", "reaction_text": "Adventure awaits!" },
+        { "id": "koh_samui", "label": "Koh Samui", "emoji": "\ud83c\udf34", "image_url": "https://images.unsplash.com/photo-1537956965359-7573183d1f57?w=400&h=250&fit=crop", "description": "Tropical island paradise", "reaction_emoji": "\ud83c\udf34", "reaction_text": "Paradise found!" }
       ]
     },
     {
@@ -209,28 +209,28 @@
       "subtitle": "Here\u0027s your travel personality",
       "conditional_reveal_cards": {
         "solo": [
-          { "id": "personality", "title": "The Free Spirit", "emoji": "\ud83e\udded", "subtitle": "You follow your own path" },
-          { "id": "superpower", "title": "Superpower: Adaptability", "emoji": "\u26a1", "subtitle": "You thrive in the unexpected" },
-          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Hidden alleys \u0026 local haunts" },
-          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Chat with locals \u2014 they know best" }
+          { "id": "personality", "title": "The Free Spirit", "emoji": "\ud83e\udded", "subtitle": "You follow your own path", "image_url": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800&h=500&fit=crop", "description": "You\u0027re the kind of traveler who turns wrong turns into the best stories." },
+          { "id": "mirror", "title": "Your Vibe Check", "emoji": "\ud83d\udd2e", "subtitle": "Here\u0027s what you told us", "description": "Solo explorer seeking authentic experiences off the beaten path." },
+          { "id": "stat", "title": "Rare Breed", "emoji": "\ud83d\udcca", "subtitle": "You\u0027re in exclusive company", "stat_text": "of travelers share your exact style", "stat_value": "Only 12%" },
+          { "id": "recs", "title": "Your Top 3 Picks", "emoji": "\ud83c\udfaf", "subtitle": "Curated just for you", "items": ["Hidden temples at dawn", "Street food you can\u0027t Google", "Rooftop bars locals love"] }
         ],
         "couple": [
-          { "id": "personality", "title": "The Dream Team", "emoji": "\ud83d\udc95", "subtitle": "Together you\u0027re unstoppable" },
-          { "id": "superpower", "title": "Superpower: Chemistry", "emoji": "\u2728", "subtitle": "You find magic in every moment" },
-          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Sunset spots \u0026 cozy corners" },
-          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Book that surprise experience" }
+          { "id": "personality", "title": "The Dream Team", "emoji": "\ud83d\udc95", "subtitle": "Together you\u0027re unstoppable", "image_url": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=500&fit=crop", "description": "You two turn every destination into a love story worth retelling." },
+          { "id": "mirror", "title": "Your Vibe Check", "emoji": "\ud83d\udd2e", "subtitle": "Here\u0027s what you told us", "description": "A duo that balances romance with adventure, food with sunsets." },
+          { "id": "stat", "title": "Perfect Pair", "emoji": "\ud83d\udcca", "subtitle": "You\u0027re in exclusive company", "stat_text": "of couples match your travel chemistry", "stat_value": "Only 8%" },
+          { "id": "recs", "title": "Your Top 3 Picks", "emoji": "\ud83c\udfaf", "subtitle": "Curated just for you", "items": ["Sunset dinner on the river", "Couple\u0027s spa hidden gem", "Rooftop cocktails with a view"] }
         ],
         "friends": [
-          { "id": "personality", "title": "The Squad Goals", "emoji": "\ud83d\ude0e", "subtitle": "Legends in the making" },
-          { "id": "superpower", "title": "Superpower: Energy", "emoji": "\ud83d\udd25", "subtitle": "You turn any place into a party" },
-          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Night markets \u0026 rooftop bars" },
-          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Split up sometimes \u2014 compare stories later" }
+          { "id": "personality", "title": "Squad Goals", "emoji": "\ud83d\ude0e", "subtitle": "Legends in the making", "image_url": "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=800&h=500&fit=crop", "description": "Your crew doesn\u0027t just travel \u2014 you create stories that get retold for years." },
+          { "id": "mirror", "title": "Your Vibe Check", "emoji": "\ud83d\udd2e", "subtitle": "Here\u0027s what you told us", "description": "A squad that mixes epic nights with exploration and great food." },
+          { "id": "stat", "title": "Legendary Crew", "emoji": "\ud83d\udcca", "subtitle": "You\u0027re in exclusive company", "stat_text": "of friend groups match your energy", "stat_value": "Only 15%" },
+          { "id": "recs", "title": "Your Top 3 Picks", "emoji": "\ud83c\udfaf", "subtitle": "Curated just for you", "items": ["Night markets that go till 2 AM", "Group island-hopping day trip", "Rooftop bar with the best sunset"] }
         ],
         "family": [
-          { "id": "personality", "title": "The Adventure Family", "emoji": "\ud83c\udfe0", "subtitle": "Making memories that last" },
-          { "id": "superpower", "title": "Superpower: Togetherness", "emoji": "\ud83e\udde1", "subtitle": "Every trip brings you closer" },
-          { "id": "match", "title": "Perfect Match", "emoji": "\ud83c\udfaf", "subtitle": "Kid-friendly gems \u0026 scenic spots" },
-          { "id": "tip", "title": "Pro Tip", "emoji": "\ud83d\udca1", "subtitle": "Build in downtime \u2014 everyone needs it" }
+          { "id": "personality", "title": "The Adventure Family", "emoji": "\ud83c\udfe0", "subtitle": "Making memories that last", "image_url": "https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800&h=500&fit=crop", "description": "Your family doesn\u0027t just vacation \u2014 you build traditions that kids remember forever." },
+          { "id": "mirror", "title": "Your Vibe Check", "emoji": "\ud83d\udd2e", "subtitle": "Here\u0027s what you told us", "description": "A family that values togetherness while keeping every age group happy." },
+          { "id": "stat", "title": "Special Fam", "emoji": "\ud83d\udcca", "subtitle": "You\u0027re in exclusive company", "stat_text": "of families travel like you do", "stat_value": "Only 10%" },
+          { "id": "recs", "title": "Your Top 3 Picks", "emoji": "\ud83c\udfaf", "subtitle": "Curated just for you", "items": ["Kid-friendly temple with elephants", "Beach with calm waters for all ages", "Night market with something for everyone"] }
         ]
       }
     },
