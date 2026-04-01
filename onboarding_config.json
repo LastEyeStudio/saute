@@ -1002,137 +1002,6 @@
       ]
     },
     {
-      "id": "personality_reveal",
-      "type": "reveal",
-      "title": "you\u0027re all set!",
-      "subtitle": "here\u0027s your travel personality"
-    },
-    {
-      "id": "curated_picks",
-      "type": "curation",
-      "title": "here are 3 curated picks just for you",
-      "subtitle": "based on your vibe, must-dos during your trip",
-      "curation_condition_source": "travel_group",
-      "conditional_curation_cards": {
-        "solo": [
-          {
-            "id": "solo_1",
-            "title": "Chatuchak Weekend Market",
-            "subtitle": "15,000 stalls. Zero tourists know the backstreets.",
-            "image_url": "https://images.unsplash.com/photo-1563449155621-17b6a3c0101e?w=800&h=1200&fit=crop",
-            "category": "hidden gem",
-            "location": "Bangkok",
-            "why_you": "you said you like going with the flow \u2014 this is where you\u0027ll lose yourself for hours."
-          },
-          {
-            "id": "solo_2",
-            "title": "Sunrise at Wat Arun",
-            "subtitle": "No crowds. Just you, the river, and golden light.",
-            "image_url": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=800&h=1200&fit=crop",
-            "category": "experience",
-            "location": "Bangkok",
-            "why_you": "solo cartographers love temples before the world wakes up."
-          },
-          {
-            "id": "solo_3",
-            "title": "Jay Fai \u2014 Street Food Legend",
-            "subtitle": "A Michelin star. A wok. A goggle-wearing grandma.",
-            "image_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=1200&fit=crop",
-            "category": "food",
-            "location": "Bangkok",
-            "why_you": "your food vibe says you\u0027re here for the real stuff, not the food court."
-          }
-        ],
-        "couple": [
-          {
-            "id": "couple_1",
-            "title": "Private Longtail at Sunset",
-            "subtitle": "Just you two, the Chao Phraya, and cold drinks.",
-            "image_url": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=800&h=1200&fit=crop",
-            "category": "experience",
-            "location": "Bangkok",
-            "why_you": "slow-burn adventurers deserve a sunset that doesn\u0027t come with a tour bus."
-          },
-          {
-            "id": "couple_2",
-            "title": "The Speakeasy on Soi Nana",
-            "subtitle": "Hidden behind a bookshelf. Cocktails from another era.",
-            "image_url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&h=1200&fit=crop",
-            "category": "nightlife",
-            "location": "Bangkok",
-            "why_you": "your vibe said romance + chaos. this place delivers both."
-          },
-          {
-            "id": "couple_3",
-            "title": "Floating Market Breakfast",
-            "subtitle": "Boat noodles, mango sticky rice, and zero rush.",
-            "image_url": "https://images.unsplash.com/photo-1540611025311-01df3cee54b5?w=800&h=1200&fit=crop",
-            "category": "food",
-            "location": "Bangkok",
-            "why_you": "shared plates > solo plates. especially when they\u0027re on a boat."
-          }
-        ],
-        "friends": [
-          {
-            "id": "friends_1",
-            "title": "Khao San Road After Dark",
-            "subtitle": "The chaos you came for. Bucket drinks and backpacker energy.",
-            "image_url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=1200&fit=crop",
-            "category": "nightlife",
-            "location": "Bangkok",
-            "why_you": "main-character crew energy peaks after midnight here."
-          },
-          {
-            "id": "friends_2",
-            "title": "Phi Phi Island Day Trip",
-            "subtitle": "Turquoise water, cliff jumps, and the group photo of a lifetime.",
-            "image_url": "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?w=800&h=1200&fit=crop",
-            "category": "adventure",
-            "location": "Phuket",
-            "why_you": "you said adventure \u2014 this is the kind that ends up as your wallpaper."
-          },
-          {
-            "id": "friends_3",
-            "title": "Yaowarat Street Food Crawl",
-            "subtitle": "Bangkok\u0027s Chinatown. Every stall is a main character.",
-            "image_url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=1200&fit=crop",
-            "category": "food",
-            "location": "Bangkok",
-            "why_you": "your squad\u0027s \u0027try everything\u0027 energy belongs here."
-          }
-        ],
-        "family": [
-          {
-            "id": "family_1",
-            "title": "Safari World Bangkok",
-            "subtitle": "Open zoo + marine park. Kids go wild (literally).",
-            "image_url": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&h=1200&fit=crop",
-            "category": "attraction",
-            "location": "Bangkok",
-            "why_you": "memory-makers need a day the kids will talk about for years."
-          },
-          {
-            "id": "family_2",
-            "title": "Gentle Beach Morning at Railay",
-            "subtitle": "Shallow water, soft sand, zero stress.",
-            "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=1200&fit=crop",
-            "category": "experience",
-            "location": "Krabi",
-            "why_you": "you said safety without stiffness \u2014 this beach gets it right."
-          },
-          {
-            "id": "family_3",
-            "title": "Night Bazaar Chiang Mai",
-            "subtitle": "Sweet + savory for picky eaters. Souvenirs for everyone.",
-            "image_url": "https://images.unsplash.com/photo-1563449155621-17b6a3c0101e?w=800&h=1200&fit=crop",
-            "category": "food",
-            "location": "Chiang Mai",
-            "why_you": "the family that eats together, stays together \u2014 especially at night markets."
-          }
-        ]
-      }
-    },
-    {
       "id": "signup",
       "type": "signup",
       "title": "sign up",
@@ -1141,6 +1010,12 @@
         "google",
         "apple"
       ]
+    },
+    {
+      "id": "personality_reveal",
+      "type": "reveal",
+      "title": "you\u0027re all set!",
+      "subtitle": "here\u0027s your travel personality"
     }
   ]
 }
