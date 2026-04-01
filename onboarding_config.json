@@ -4,6 +4,1014 @@
   "signup_required": false,
   "screens": [
     {
+      "id": "destination",
+      "type": "multi_select",
+      "title": "where is your heart at?",
+      "subtitle": "just tell us where you are, and we'll plan it based on your vibe.",
+      "auto_advance": false,
+      "min_selections": 1,
+      "options": [
+        {
+          "id": "bangkok",
+          "label": "Bangkok",
+          "description": "temples, tuk-tuks & street chaos"
+        },
+        {
+          "id": "pattaya",
+          "label": "Pattaya",
+          "description": "sun, sea & endless energy"
+        },
+        {
+          "id": "phuket",
+          "label": "Phuket",
+          "description": "beaches, islands & nightlife"
+        },
+        {
+          "id": "krabi",
+          "label": "Krabi",
+          "description": "cliffs, caves & clear water"
+        },
+        {
+          "id": "surat_thani",
+          "label": "Surat Thani",
+          "description": "ferry gateway to the islands"
+        },
+        {
+          "id": "koh_lipe",
+          "label": "Koh Lipe",
+          "description": "tiny island, massive vibes"
+        },
+        {
+          "id": "koh_samui",
+          "label": "Koh Samui",
+          "description": "palm trees & island paradise"
+        },
+        {
+          "id": "koh_phangan",
+          "label": "Koh Phangan",
+          "description": "full moon parties & jungle retreats"
+        },
+        {
+          "id": "surprise_me",
+          "label": "Surprise Me!",
+          "description": "you plan it based on our vibe",
+          "is_exclusive": true
+        }
+      ]
+    },
+    {
+      "id": "travel_group",
+      "type": "single_select",
+      "title": "who's coming along?",
+      "subtitle": "every traveler brings their own rhythm.",
+      "auto_advance": false,
+      "options": [
+        {
+          "id": "solo",
+          "label": "Solo",
+          "description": "just me, myself & Thailand",
+          "reaction_emoji": "\ud83e\uddf3",
+          "reaction_text": "Solo adventure mode!"
+        },
+        {
+          "id": "friends",
+          "label": "Friends",
+          "description": "the squad goes global",
+          "reaction_emoji": "\ud83c\udf89",
+          "reaction_text": "Squad trip activated!"
+        },
+        {
+          "id": "couple",
+          "label": "Couple",
+          "description": "romance meets adventure",
+          "reaction_emoji": "\ud83d\udc95",
+          "reaction_text": "Couple goals incoming!"
+        },
+        {
+          "id": "couple_with_kids",
+          "label": "Couple + Kids",
+          "description": "family fun, adult style",
+          "reaction_emoji": "\ud83d\udc95",
+          "reaction_text": "Family adventure starts!"
+        },
+        {
+          "id": "family",
+          "label": "Family",
+          "description": "the whole crew, all ages",
+          "reaction_emoji": "\ud83e\udde1",
+          "reaction_text": "Family memories loading!"
+        }
+      ],
+      "follow_up_questions": [
+        {
+          "trigger_option_id": "friends",
+          "inline": true,
+          "question": {
+            "id": "group_size",
+            "type": "single_select",
+            "title": "how many of you?",
+            "auto_advance": true,
+            "options": [
+              {
+                "id": "2_3",
+                "label": "2-3",
+                "emoji": "\u270c\ufe0f",
+                "reaction_emoji": "\u270c\ufe0f",
+                "reaction_text": "Small crew, big vibes!"
+              },
+              {
+                "id": "4_6",
+                "label": "4-6",
+                "emoji": "\ud83d\udd90\ufe0f",
+                "reaction_emoji": "\ud83d\udd90\ufe0f",
+                "reaction_text": "The more the merrier!"
+              },
+              {
+                "id": "7_plus",
+                "label": "7+",
+                "emoji": "\ud83e\udd1f",
+                "reaction_emoji": "\ud83e\udd1f",
+                "reaction_text": "Full squad rolling!"
+              }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "couple_with_kids",
+          "inline": true,
+          "question": {
+            "id": "couple_kids_count",
+            "type": "single_select",
+            "title": "how many little ones?",
+            "options": [
+              {
+                "id": "kids_1",
+                "label": "Just 1"
+              },
+              {
+                "id": "kids_2",
+                "label": "2"
+              },
+              {
+                "id": "kids_3_plus",
+                "label": "3 or more"
+              }
+            ],
+            "follow_up_questions": [
+              {
+                "trigger_option_id": "kids_1",
+                "inline": true,
+                "question": {
+                  "id": "couple_kids_ages",
+                  "type": "single_select",
+                  "title": "how young are the little ones?",
+                  "subtitle": "helps us pick the right activities & stays",
+                  "options": [
+                    {
+                      "id": "under_2",
+                      "label": "Under 2",
+                      "emoji": "\ud83d\udc76",
+                      "description": "infants"
+                    },
+                    {
+                      "id": "2_5",
+                      "label": "2\u20135 yrs",
+                      "emoji": "\ud83e\uddd2",
+                      "description": "toddlers"
+                    },
+                    {
+                      "id": "6_12",
+                      "label": "6\u201312 yrs",
+                      "emoji": "\ud83d\udc66",
+                      "description": "school age"
+                    }
+                  ]
+                }
+              },
+              {
+                "trigger_option_id": "kids_2",
+                "inline": true,
+                "question": {
+                  "id": "couple_kids_ages",
+                  "type": "single_select",
+                  "title": "how young are the little ones?",
+                  "subtitle": "helps us pick the right activities & stays",
+                  "options": [
+                    {
+                      "id": "under_2",
+                      "label": "Under 2",
+                      "emoji": "\ud83d\udc76",
+                      "description": "infants"
+                    },
+                    {
+                      "id": "2_5",
+                      "label": "2\u20135 yrs",
+                      "emoji": "\ud83e\uddd2",
+                      "description": "toddlers"
+                    },
+                    {
+                      "id": "6_12",
+                      "label": "6\u201312 yrs",
+                      "emoji": "\ud83d\udc66",
+                      "description": "school age"
+                    }
+                  ]
+                }
+              },
+              {
+                "trigger_option_id": "kids_3_plus",
+                "inline": true,
+                "question": {
+                  "id": "couple_kids_ages",
+                  "type": "single_select",
+                  "title": "how young are the little ones?",
+                  "subtitle": "helps us pick the right activities & stays",
+                  "options": [
+                    {
+                      "id": "under_2",
+                      "label": "Under 2",
+                      "emoji": "\ud83d\udc76",
+                      "description": "infants"
+                    },
+                    {
+                      "id": "2_5",
+                      "label": "2\u20135 yrs",
+                      "emoji": "\ud83e\uddd2",
+                      "description": "toddlers"
+                    },
+                    {
+                      "id": "6_12",
+                      "label": "6\u201312 yrs",
+                      "emoji": "\ud83d\udc66",
+                      "description": "school age"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "family",
+          "inline": true,
+          "question": {
+            "id": "family_special",
+            "type": "multi_select",
+            "title": "anyone special to plan for?",
+            "subtitle": "select all that apply \u2014 we'll make sure everyone's comfortable",
+            "min_selections": 1,
+            "options": [
+              {
+                "id": "elderly",
+                "label": "Elderly",
+                "emoji": "\ud83d\udc74",
+                "description": "65+ comfort & accessibility"
+              },
+              {
+                "id": "young_kids",
+                "label": "Young Kids",
+                "emoji": "\ud83d\udc76",
+                "description": "babies & little ones"
+              },
+              {
+                "id": "nope_all_good",
+                "label": "Nope, we're good!",
+                "emoji": "\ud83d\ude0e",
+                "is_exclusive": true
+              }
+            ],
+            "follow_up_questions": [
+              {
+                "trigger_option_id": "elderly",
+                "inline": true,
+                "question": {
+                  "id": "elderly_ages",
+                  "type": "single_select",
+                  "title": "what age range?",
+                  "subtitle": "we'll prioritise accessibility & comfort",
+                  "auto_advance": true,
+                  "options": [
+                    {
+                      "id": "60_70",
+                      "label": "60\u201370",
+                      "emoji": "\ud83e\uddd3",
+                      "reaction_emoji": "\ud83e\uddd3",
+                      "reaction_text": "Golden age adventures!"
+                    },
+                    {
+                      "id": "70_80",
+                      "label": "70\u201380",
+                      "emoji": "\ud83d\udc74",
+                      "reaction_emoji": "\ud83d\udc74",
+                      "reaction_text": "Slow travel, big memories!"
+                    },
+                    {
+                      "id": "80_plus",
+                      "label": "80+",
+                      "emoji": "\ud83e\udeb4",
+                      "reaction_emoji": "\ud83e\udeb4",
+                      "reaction_text": "Comfort first, always!"
+                    }
+                  ]
+                }
+              },
+              {
+                "trigger_option_id": "young_kids",
+                "inline": true,
+                "question": {
+                  "id": "kids_ages",
+                  "type": "single_select",
+                  "title": "how young are the little ones?",
+                  "subtitle": "we'll pick age-appropriate everything",
+                  "auto_advance": true,
+                  "options": [
+                    {
+                      "id": "under_2",
+                      "label": "Under 2",
+                      "emoji": "\ud83d\udc76",
+                      "description": "infants",
+                      "reaction_emoji": "\ud83d\udc76",
+                      "reaction_text": "Tiny travellers incoming!"
+                    },
+                    {
+                      "id": "2_5",
+                      "label": "2\u20135 yrs",
+                      "emoji": "\ud83e\uddd2",
+                      "description": "toddlers",
+                      "reaction_emoji": "\ud83e\uddd2",
+                      "reaction_text": "Little explorers!"
+                    },
+                    {
+                      "id": "6_12",
+                      "label": "6\u201312 yrs",
+                      "emoji": "\ud83d\udc66",
+                      "description": "school age",
+                      "reaction_emoji": "\ud83d\udc66",
+                      "reaction_text": "Young adventurers!"
+                    }
+                  ],
+                  "follow_up_questions": [
+                    {
+                      "trigger_option_id": "under_2",
+                      "inline": true,
+                      "question": {
+                        "id": "kids_count",
+                        "type": "single_select",
+                        "title": "how many little ones?",
+                        "options": [
+                          {
+                            "id": "kids_1",
+                            "label": "Just 1"
+                          },
+                          {
+                            "id": "kids_2",
+                            "label": "2"
+                          },
+                          {
+                            "id": "kids_3_plus",
+                            "label": "3 or more"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "trigger_option_id": "2_5",
+                      "inline": true,
+                      "question": {
+                        "id": "kids_count",
+                        "type": "single_select",
+                        "title": "how many little ones?",
+                        "options": [
+                          {
+                            "id": "kids_1",
+                            "label": "Just 1"
+                          },
+                          {
+                            "id": "kids_2",
+                            "label": "2"
+                          },
+                          {
+                            "id": "kids_3_plus",
+                            "label": "3 or more"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "trigger_option_id": "6_12",
+                      "inline": true,
+                      "question": {
+                        "id": "kids_count",
+                        "type": "single_select",
+                        "title": "how many little ones?",
+                        "options": [
+                          {
+                            "id": "kids_1",
+                            "label": "Just 1"
+                          },
+                          {
+                            "id": "kids_2",
+                            "label": "2"
+                          },
+                          {
+                            "id": "kids_3_plus",
+                            "label": "3 or more"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "couple",
+          "question": {
+            "id": "celebration_couple",
+            "type": "multi_select",
+            "title": "celebrating something or someone?",
+            "subtitle": "we\u2019ll add the special touches",
+            "auto_advance": false,
+            "min_selections": 0,
+            "options": [
+              {
+                "id": "anniversary",
+                "label": "Anniversary",
+                "description": "mark the milestone in style"
+              },
+              {
+                "id": "birthday",
+                "label": "Birthday",
+                "description": "make it one to remember"
+              },
+              {
+                "id": "proposal",
+                "label": "Proposal",
+                "description": "the perfect setting awaits"
+              },
+              {
+                "id": "babymoon",
+                "label": "Babymoon",
+                "description": "relax before the big arrival"
+              }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "couple_with_kids",
+          "question": {
+            "id": "celebration_couple",
+            "type": "multi_select",
+            "title": "celebrating something or someone?",
+            "subtitle": "we\u2019ll add the special touches",
+            "auto_advance": false,
+            "min_selections": 0,
+            "options": [
+              {
+                "id": "anniversary",
+                "label": "Anniversary",
+                "description": "mark the milestone in style"
+              },
+              {
+                "id": "birthday",
+                "label": "Birthday",
+                "description": "make it one to remember"
+              },
+              {
+                "id": "proposal",
+                "label": "Proposal",
+                "description": "the perfect setting awaits"
+              },
+              {
+                "id": "babymoon",
+                "label": "Babymoon",
+                "description": "relax before the big arrival"
+              }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "friends",
+          "question": {
+            "id": "celebration_friends",
+            "type": "multi_select",
+            "title": "celebrating something or someone?",
+            "subtitle": "we\u2019ll add the special touches",
+            "auto_advance": false,
+            "min_selections": 0,
+            "options": [
+              {
+                "id": "friend_birthday",
+                "label": "Birthdays",
+                "description": "cheers to the birthday squad"
+              },
+              {
+                "id": "reunion",
+                "label": "Reunion",
+                "description": "picking up right where you left off"
+              },
+              {
+                "id": "bachelorette",
+                "label": "Bachelorette",
+                "description": "last hurrah before forever"
+              },
+              {
+                "id": "workation_trip",
+                "label": "Workation",
+                "description": "hustle by day, explore by night"
+              }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "family",
+          "question": {
+            "id": "celebration_family",
+            "type": "multi_select",
+            "title": "celebrating something or someone?",
+            "subtitle": "we\u2019ll add the special touches",
+            "auto_advance": false,
+            "min_selections": 0,
+            "options": [
+              {
+                "id": "family_birthday",
+                "label": "Birthday",
+                "description": "make it a trip they\u2019ll never forget"
+              },
+              {
+                "id": "parents_abroad",
+                "label": "Parents abroad",
+                "description": "their first international trip"
+              },
+              {
+                "id": "cousin_gathering",
+                "label": "Cousin gathering",
+                "description": "the whole cousin crew, reunited"
+              },
+              {
+                "id": "pre_shaadi",
+                "label": "Pre-shaadi",
+                "description": "festivities before the big day"
+              }
+            ]
+          }
+        },
+        {
+          "trigger_option_id": "",
+          "inline": true,
+          "always_show": true,
+          "question": {
+            "id": "travel_with_pet",
+            "type": "single_select",
+            "title": "any furry friends joining?",
+            "subtitle": "we'll find pet-friendly stays & activities",
+            "min_selections": 0,
+            "options": [
+              {
+                "id": "yes_pet",
+                "label": "Yes"
+              },
+              {
+                "id": "no_pet",
+                "label": "No"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "travel_style",
+      "type": "multi_select",
+      "title": "what's the vibe of this trip?",
+      "subtitle": "pick how you're thinking of this trip, and we'll make wanderlust happen",
+      "auto_advance": false,
+      "min_selections": 1,
+      "max_selections": 3,
+      "condition_source": "travel_group",
+      "conditional_options": {
+        "solo": [
+          {
+            "id": "go_with_flow",
+            "label": "Go With the Flow",
+            "description": "no plans, just vibes"
+          },
+          {
+            "id": "party_beaches",
+            "label": "Party & Beaches",
+            "description": "sun, sand & nightlife"
+          },
+          {
+            "id": "culture_spiritual",
+            "label": "Culture & Spiritual",
+            "description": "temples, history & meaning"
+          },
+          {
+            "id": "adventure_activities",
+            "label": "Adventure & Activities",
+            "description": "hikes, dives & adrenaline"
+          },
+          {
+            "id": "bougie_instagrammy",
+            "label": "Bougie & Instagrammy",
+            "description": "aesthetic stays & photo spots"
+          },
+          {
+            "id": "other_vibe",
+            "label": "Other",
+            "description": "tell us your vibe"
+          }
+        ],
+        "couple": [
+          {
+            "id": "go_with_flow",
+            "label": "Go With the Flow",
+            "description": "no plans, just vibes"
+          },
+          {
+            "id": "party_beaches",
+            "label": "Party & Beaches",
+            "description": "sun, sand & nightlife"
+          },
+          {
+            "id": "culture_spiritual",
+            "label": "Culture & Spiritual",
+            "description": "temples, history & meaning"
+          },
+          {
+            "id": "adventure_activities",
+            "label": "Adventure & Activities",
+            "description": "hikes, dives & adrenaline"
+          },
+          {
+            "id": "bougie_instagrammy",
+            "label": "Bougie & Instagrammy",
+            "description": "aesthetic stays & photo spots"
+          },
+          {
+            "id": "couple_time",
+            "label": "Couple Time",
+            "description": "romance, sunsets & togetherness"
+          },
+          {
+            "id": "other_vibe",
+            "label": "Other",
+            "description": "tell us your vibe"
+          }
+        ],
+        "couple_with_kids": [
+          {
+            "id": "go_with_flow",
+            "label": "Go With the Flow",
+            "description": "no plans, just vibes"
+          },
+          {
+            "id": "party_beaches",
+            "label": "Party & Beaches",
+            "description": "sun, sand & kid-friendly fun"
+          },
+          {
+            "id": "culture_spiritual",
+            "label": "Culture & Spiritual",
+            "description": "meaningful experiences for all ages"
+          },
+          {
+            "id": "adventure_activities",
+            "label": "Adventure & Activities",
+            "description": "family-friendly thrills"
+          },
+          {
+            "id": "touristy_fun",
+            "label": "Touristy Fun",
+            "description": "landmarks, theme parks & classics"
+          },
+          {
+            "id": "family_time",
+            "label": "Family Time",
+            "description": "bonding, relaxing & making memories"
+          },
+          {
+            "id": "other_vibe",
+            "label": "Other",
+            "description": "tell us your vibe"
+          }
+        ],
+        "friends": [
+          {
+            "id": "go_with_flow",
+            "label": "Go With the Flow",
+            "description": "no plans, just vibes"
+          },
+          {
+            "id": "party_beaches",
+            "label": "Party & Beaches",
+            "description": "sun, sand & nightlife"
+          },
+          {
+            "id": "culture_spiritual",
+            "label": "Culture & Spiritual",
+            "description": "temples, history & meaning"
+          },
+          {
+            "id": "adventure_activities",
+            "label": "Adventure & Activities",
+            "description": "hikes, dives & adrenaline"
+          },
+          {
+            "id": "bougie_instagrammy",
+            "label": "Bougie & Instagrammy",
+            "description": "aesthetic stays & photo spots"
+          },
+          {
+            "id": "other_vibe",
+            "label": "Other",
+            "description": "tell us your vibe"
+          }
+        ],
+        "family": [
+          {
+            "id": "go_with_flow",
+            "label": "Go With the Flow",
+            "description": "no plans, just vibes"
+          },
+          {
+            "id": "party_beaches",
+            "label": "Party & Beaches",
+            "description": "sun, sand & family fun"
+          },
+          {
+            "id": "culture_spiritual",
+            "label": "Culture & Spiritual",
+            "description": "temples, history & stories"
+          },
+          {
+            "id": "adventure_activities",
+            "label": "AdventureAdventure & Activities",
+            "description": "hikes, bikes & water parks"
+          },
+          {
+            "id": "touristy_fun",
+            "label": "Touristy Fun",
+            "description": "landmarks, theme parks & classics"
+          },
+          {
+            "id": "family_time",
+            "label": "Family Time",
+            "description": "bonding, relaxing & making memories"
+          },
+          {
+            "id": "other_vibe",
+            "label": "Other",
+            "description": "tell us your vibe"
+          }
+        ]
+      }
+    },
+    {
+      "id": "budget",
+      "type": "splurge_save",
+      "title": "where should we splurge vs save?",
+      "subtitle": "tell us where you like to spend and where you'd save, so we help you get a bang for your buck",
+      "options": [
+        {
+          "id": "flights",
+          "label": "flights"
+        },
+        {
+          "id": "stays",
+          "label": "stays"
+        },
+        {
+          "id": "experiences",
+          "label": "experiences"
+        },
+        {
+          "id": "food",
+          "label": "food"
+        },
+        {
+          "id": "shopping",
+          "label": "shopping"
+        }
+      ]
+    },
+    {
+      "id": "poison",
+      "type": "multi_select",
+      "title": "what\u0027s your poison?",
+      "subtitle": "tell us what you enjoy \u2014 we\u0027ll make sure it\u0027s part of the trip",
+      "auto_advance": false,
+      "max_selections": 3,
+      "min_selections": 1,
+      "has_icons": true,
+      "condition_source": "travel_group",
+      "conditional_options": {
+        "solo": [
+          {
+            "id": "street_food",
+            "label": "Street Food",
+            "description": "local bites & hidden gems"
+          },
+          {
+            "id": "fine_dine",
+            "label": "Fine Dine",
+            "description": "chef\u0027s table & tasting menus"
+          },
+          {
+            "id": "wine",
+            "label": "Wine",
+            "description": "vineyards & pairings"
+          },
+          {
+            "id": "whiskey",
+            "label": "Whiskey",
+            "description": "neat, on the rocks, or flights"
+          },
+          {
+            "id": "gin",
+            "label": "Gin",
+            "description": "botanicals & craft bars"
+          },
+          {
+            "id": "vodka",
+            "label": "Vodka",
+            "description": "clean pours & cocktails"
+          },
+          {
+            "id": "vape",
+            "label": "Vape",
+            "description": "clouds & flavours"
+          },
+          {
+            "id": "greens",
+            "label": "Greens",
+            "description": "if you know, you know"
+          },
+          {
+            "id": "coffee",
+            "label": "Coffee",
+            "description": "espresso runs & cafe hopping"
+          },
+          {
+            "id": "water",
+            "label": "Water",
+            "description": "hydrated & happy"
+          },
+          {
+            "id": "other_poison",
+            "label": "Something Else",
+            "description": "tell us your pick",
+            "has_text_input": true
+          }
+        ],
+        "couple": [
+          {
+            "id": "street_food",
+            "label": "Street Food",
+            "description": "local bites & hidden gems"
+          },
+          {
+            "id": "fine_dine",
+            "label": "Fine Dine",
+            "description": "chef\u0027s table & tasting menus"
+          },
+          {
+            "id": "wine",
+            "label": "Wine",
+            "description": "vineyards & pairings"
+          },
+          {
+            "id": "whiskey",
+            "label": "Whiskey",
+            "description": "neat, on the rocks, or flights"
+          },
+          {
+            "id": "gin",
+            "label": "Gin",
+            "description": "botanicals & craft bars"
+          },
+          {
+            "id": "vodka",
+            "label": "Vodka",
+            "description": "clean pours & cocktails"
+          },
+          {
+            "id": "vape",
+            "label": "Vape",
+            "description": "clouds & flavours"
+          },
+          {
+            "id": "greens",
+            "label": "Greens",
+            "description": "if you know, you know"
+          },
+          {
+            "id": "coffee",
+            "label": "Coffee",
+            "description": "espresso runs & cafe hopping"
+          },
+          {
+            "id": "water",
+            "label": "Water",
+            "description": "hydrated & happy"
+          },
+          {
+            "id": "other_poison",
+            "label": "Something Else",
+            "description": "tell us your pick",
+            "has_text_input": true
+          }
+        ],
+        "friends": [
+          {
+            "id": "street_food",
+            "label": "Street Food",
+            "description": "local bites & hidden gems"
+          },
+          {
+            "id": "fine_dine",
+            "label": "Fine Dine",
+            "description": "chef\u0027s table & tasting menus"
+          },
+          {
+            "id": "wine",
+            "label": "Wine",
+            "description": "vineyards & pairings"
+          },
+          {
+            "id": "whiskey",
+            "label": "Whiskey",
+            "description": "neat, on the rocks, or flights"
+          },
+          {
+            "id": "gin",
+            "label": "Gin",
+            "description": "botanicals & craft bars"
+          },
+          {
+            "id": "vodka",
+            "label": "Vodka",
+            "description": "clean pours & cocktails"
+          },
+          {
+            "id": "vape",
+            "label": "Vape",
+            "description": "clouds & flavours"
+          },
+          {
+            "id": "greens",
+            "label": "Greens",
+            "description": "if you know, you know"
+          },
+          {
+            "id": "coffee",
+            "label": "Coffee",
+            "description": "espresso runs & cafe hopping"
+          },
+          {
+            "id": "water",
+            "label": "Water",
+            "description": "hydrated & happy"
+          },
+          {
+            "id": "other_poison",
+            "label": "Something Else",
+            "description": "tell us your pick",
+            "has_text_input": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "travel_ick",
+      "type": "text_input",
+      "title": "what\u0027s your biggest travel ick?",
+      "subtitle": "tell us what the red flags are for you, we\u0027ll behave accordingly",
+      "min_selections": 0,
+      "hints": [
+        "crowded tourist traps",
+        "finding good veg food",
+        "cultural anxiety about temples/rules",
+        "rain ruining my plans",
+        "getting scammed on transport",
+        "no plan paralysis",
+        "language barriers",
+        "bad wifi or no connectivity"
+      ]
+    },
+    {
+      "id": "signup",
+      "type": "signup",
+      "title": "sign up",
+      "subtitle": "save your details, and keep the magic going throughout the trip",
+      "signup_methods": [
+        "google",
+        "apple"
+      ]
+    },
+    {
       "id": "personality_reveal",
       "type": "reveal",
       "title": "you\u0027re all set!",
